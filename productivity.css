@@ -217,7 +217,10 @@ input {
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
-  border-radius: 0;
+  /*border-radius: 0;*/
+  border-radius:6px;
+  border: none;
+  margin-bottom:100px;
 }
 
 
@@ -328,5 +331,3 @@ audio{
 .music{
   margin-left: 24%;
 }
-
-

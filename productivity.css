@@ -49,6 +49,14 @@ label{
   font-family: 'Poppins', sans-serif;
 }
 
+p{
+  font-family: 'Poppins', sans-serif;
+  text-align:center;
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-bottom: 20px;
+}
+
 /*Navigation*/
 nav{
   text-align: center;
@@ -320,6 +328,5 @@ audio{
 .music{
   margin-left: 24%;
 }
-
 
 

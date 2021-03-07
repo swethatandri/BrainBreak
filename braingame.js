@@ -72,7 +72,7 @@ function DrawBottle(){
 
 function PlayMusic(){
 
-ctx.clearRect(0, 0, 1070, 300);
+ctx.clearRect(0, 0, 1080, 300);
 
   
 
@@ -128,7 +128,7 @@ function UpdateScore(){
 
 function SwitchBrains(){
 
-  if(score == 127){
+  if(score == 127 || score > 127){
 
     document.getElementById("brain").src = "Graphics/1.png";
 
@@ -147,7 +147,7 @@ function SwitchBrains(){
 
   }
 
-  else if(90 <= score <= 97){
+  else if( score <= 99){
 
     ctx.clearRect(0, 0, 1070, 300);
 
@@ -184,7 +184,7 @@ function GameOver(){
 //press the water can after the user drops it abo
 function Collision(){
 
-  ctx.clearRect(0, 0, 1070, 300);
+  ctx.clearRect(0, 0, 1080, 300);
 
   var img = document.getElementById("mydivheader");
    
@@ -194,5 +194,41 @@ function Collision(){
 
     score -= 5;
     UpdateScore();
+
+}
+
+function ThisIsNegative(){
+
+  ctx.clearRect(0, 0, 1080, 300);
+  formRectangles();
+
+  ctx.fillStyle = "black";
+
+  ctx.fillText("No! Doing work right now in a state of stress can cause even more. Use this time to take the break you deserve!", 90, 190);
+
+  score += 8;
+  UpdateScore();
+
+
+
+}
+
+function formRectangles(){
+
+  ctx.beginPath();
+  ctx.rect(530, 250, 100, 20);
+  ctx.fillStyle = "red";
+  ctx.fill();
+  ctx.closePath();
+
+  ctx.beginPath();
+  ctx.rect(530, 235, 100, 20);
+  ctx.fillStyle = "orange";
+  ctx.fill();
+  ctx.closePath();
+
+
+
+
 
 }

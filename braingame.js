@@ -194,3 +194,5 @@ function Collision(){
 
     score -= 5;
     UpdateScore();
+
+}

@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'ChristmasStory-3zXXy';
+  src: url('ChristmasStory-3zXXy.eot');
+  src: url('ChristmasStory-3zXXy.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ChristmasStory';
+  src: url('ChristmasStory.svg#ChristmasStory') format('svg'),
+       url('ChristmasStory.ttf') format('truetype'),
+       url('ChristmasStory.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+

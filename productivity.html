@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Productivity</title>
+    <link rel="icon" type="Graphics/favicon1.png" href="Graphics/favicon1.png">
+    <link href="productivity.css" rel="stylesheet" type="text/css"/>
+    <!--FONT-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" rel="stylesheet"/>
+</head>
+  </head>
+  <body>
+    <!--NAVIGATION-->
+    <nav>
+      <a class= 'navi' href='index.html'>Home</a>
+      <a class= 'navi' href='braingame.html'>Brain Game</a>
+      <a class= 'navi' href='productivity.html'>Productivity</a>
+    </nav>
+ 
+     <!--SECTION 1-->
+	    <section class="section1">
+      <!--TITLE-->
+	    <h1>Productivity</h1>
+      </section>
+      
+      <audio controls id="music">
+   <source src="productivity.mp3" type="audio/mpeg">  </audio>
+
+     <!--Section 2: note to self make h3 css -->
+	    <h2>Pomodoro Method</h2>
+      <div id="pomodoro-container">
+        <div id="pomodoro-clock">
+          <div id="pomodoro-timer"></div>
+          <div id="pomodoro-clock-actions">
+            <button id="pomodoro-start">
+              <i class="fas fa-play" id="play-icon"></i>
+              <i class="fas fa-pause hidden" id="pause-icon"></i>
+            </button>
+            <button id="pomodoro-stop" class="hidden">
+              <i class="fas fa-stop"></i>
+            </button>
+          </div>
+        </div>
+        <!-- new -->
+        <div id="pomodoro-clock-title">
+          <span>
+            Changes made here will reflect at the start of the next work /
+            break session
+          </span>
+        </div>
+        <div id="pomodoro-clock-actions">
+          <div class="pomodoro-input">
+            <label>Work Duration</label>
+            <input name="input-work-duration" id="input-work-duration" type="number" />
+          </div>
+          <div class="pomodoro-input">
+            <label>Break Duration</label>
+            <input name="input-break-duration" id="input-break-duration" type="number" />
+          </div>
+        </div>
+        <div id="pomodoro-info">
+          <h3>Your Sessions </h3>
+          <ul id="pomodoro-sessions">
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+
+      <button onclick="MusicGenerate()" class="addBtn music"> Music
+        </button>
+
+    <!--Section 3-->
+      <div id="myDIV" class="header">
+      <h2>To Do List!</h2>
+      <input type="text" id="myInput" placeholder="Task...">
+    <span onclick="newElement()"class="addBtn">Add</span>
+    </div>
+    <ul id="myUL">
+    </ul>
+  <script src="productivity.js"></script>
+  </body>
+</html>

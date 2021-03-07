@@ -1,0 +1,267 @@
+/*Title*/
+@font-face {
+        font-family: 'christmas-story-font';
+        src: url('ChristmasStory.ttf') format('truetype'),
+       url('ChristmasStory.woff') format('woff');
+}
+
+h1{
+ font-family: 'Poppins', sans-serif;
+ color:#1D4E89;
+ /*margin: 5%;*/
+ padding-top: 45px;
+ padding-bottom: 45px;
+ text-align:center;
+ font-size:70px;
+}
+
+h2{
+ font-family: 'Poppins', sans-serif;
+ color:#1D4E89;
+ /*margin: 5%;*/
+ padding-top: 110px;
+ text-align:left;
+ font-size:30px;
+}
+
+/*Navigation*/
+nav{
+  text-align: center;
+  margin: 2.5%;
+}
+
+.navi{
+  font-family: 'Poppins', sans-serif;
+  font-size:18px;
+  background-color:white;
+  color: #0A0A0A;
+  margin: 5%;
+  text-decoration:none;
+}
+.navi:hover{
+  font-family: 'Poppins', sans-serif;
+  background-color:white;
+  color: #FF8589;
+  margin: 5%;
+  transition-duration:0.25s;
+}
+
+/*Background*/
+body{
+  /*background-color: #ADD9F4;*/
+  margin: 0%;
+  height: 100%;
+}
+
+.title{
+  margin-top:20px;
+}
+
+/*section 1*/
+.section1{
+  background-color: #ADD9F4;
+  height: 788px;
+  width: 100%;
+}
+
+/*section 2*/
+.section2{
+  background-color: white;
+  height: 780px;
+  width: 100%;
+}
+
+/*Subheading*/
+.subheading{
+ font-family: 'Poppins', sans-serif;
+ text-align:center;
+ color:#1D4E89;
+ font-size:27px;
+ text-transform: uppercase;
+ font-weight: lighter;
+ letter-spacing: 1px;
+}
+
+/*About*/
+.about{
+  color:#1D4E89;
+  font-family: 'Poppins', sans-serif;
+  font-size:60px;
+  text-align:left;
+  margin-left:13%;
+  margin-top: 10%;
+}
+
+/*Description*/
+.description{
+  font-family: 'Poppins', sans-serif;
+  font-size:23px;
+  text-align: left;
+  margin-left:13%;
+  margin-right:13%;
+  color: #0A0A0A;
+}
+
+
+/*Button*/
+.buttons{
+  text-align:left;
+  margin-top:100px;
+  margin-bottom: 100px;
+  margin-left:13%;
+  padding-bottom: 50px;
+}
+
+button{
+  border:none;
+  background-color: #ADD9F4;
+  text-align:center;
+  text-decoration:none;
+  padding: 16px 20px;
+  font-size:25px;
+  border-radius:6px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.brainGame{
+  margin-right:30px;
+}
+
+.productivity{
+  margin-left:30px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ /*Productivity Stuff*/
+ /*section 1*/
+.section4{
+  background-color: #ADD9F4;
+  height:400px;
+  width: 100%;
+}
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #1D4E89;
+  color: white;
+}
+
+/* Style the header */
+.header {
+  background-color: #ADD9F4;
+  padding: 50px 50px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: center;
+  font-size: 16px;
+}
+
+/*to do list button*/
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: center;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+.buttonLink{
+  color:#1D4E89;
+  text-decoration:none;
+}
+
+.buttonLink:hover{
+  color:white;
+  transition-duration: 0.25s;
+}
+
+
+/*Image*/
+img {
+  width: 35%;
+  height: auto;
+  margin: auto;
+  display: block;
+
+}
+
